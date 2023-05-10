@@ -23,11 +23,11 @@ body {
 
 
 
-.linkNav {
+/* .linkNav {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-} 
+}  */
 
 
 /*Configuración especial promo*/
@@ -36,6 +36,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100vh;
+
 
 }
 
@@ -82,6 +84,10 @@ body {
     text-transform: uppercase;
     /*background-color: green;*/
 }
+.oradores h5{
+    font-size:.7rem;
+    font-weight: bold;
+}
 
 .superHeader {
     font-size: .9rem;
@@ -97,19 +103,19 @@ body {
 }
 
 
-
+/* 
 .tarjetas div {
     width: 25vw;
     margin: 10px;
     border: 1px solid #d4d4d4;
-    border-radius: 4px;
+    border-radius: 4px; 
 }
 
 .tarjetas img {
     border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    border-top-left-radius: 3px; 
 
-}
+} */
 
 
 .lugar img {
@@ -126,10 +132,10 @@ body {
 
 
 
-.convertite p {
+/* .convertite p {
     text-align: center;
     font-size: 0.8rem;
-}
+} */
 
 
 
@@ -159,7 +165,7 @@ body {
     color: white;
 
 }
-
+/* 
 .footer {
     margin-top:2rem;
     background-color: #1e4f6d;
@@ -182,4 +188,4 @@ body {
     width:11%;
     color: white;
 }
-
+ */

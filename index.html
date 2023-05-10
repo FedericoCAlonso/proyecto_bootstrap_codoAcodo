@@ -13,30 +13,35 @@
 </head>
 
 <body id="index">
-    <header class="header container-fluid bg-dark ">
-        <div class="barraNavegacion navbar-expand-lg d-flex justify-content-around">
+    <header class="header container-fluid  ">
+        <div class="barraNavegacion navbar-expand-lg d-flex justify-content-around fixed-top bg-dark">
             <div class="grupoLogo d-flex align-items-center navbar-light col-lg-5 text-white">
                 <a href="#" class="navbar-brand"><img src="./assets/images/codoacodo.png" alt="Logo codo a codo"></a>
                 <h2>Conf Bs. As.</h2>
             </div>
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="menuNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="navegacion collapse navbar-collapse navbar-light col-lg-5" id="menuNav" >
-                <ul class="navbar-nav w-100 justify-content-around d-flex align-items-center" >
-                    <li><a class="linkNav nav-item text-white-50" href="#conferenciaID">La Conferencia</a></li>
-                    <li><a class="linkNav nav-item text-white-50" href="#oradoresID">Los oradoresID</a></li>
-                    <li><a class="linkNav nav-item text-white-50" href="#lugarID">El lugarID y la fecha</a></li>
-                    <li><a class="linkNav nav-item text-white-50" href="#convertiteID">Convertite en orador</a></li>
-                    <li><a class="linkNav nav-item comprar text-success" href="./pages/tienda.html">Comprar tickets</a></li>
+            <nav class="navegacion collapse navbar-collapse navbar-light col-lg-5" id="menuNav">
+                <ul class="navbar-nav w-100 justify-content-around d-flex align-items-center">
+                    <li class="nav-item"><a class="linkNav nav-link text-white-50" href="#conferenciaID">La
+                            Conferencia</a></li>
+                    <li class="nav-item"><a class="linkNav nav-link text-white-50" href="#oradoresID">Los oradoresID</a>
+                    </li>
+                    <li class="nav-item"><a class="linkNav nav-link text-white-50" href="#lugarID">El lugarID y la
+                            fecha</a></li>
+                    <li class="nav-item"><a class="linkNav nav-link text-white-50" href="#convertiteID">Convertite en
+                            orador</a></li>
+                    <li class="nav-item"><a class="linkNav nav-link comprar text-success"
+                            href="./pages/tienda.html">Comprar tickets</a></li>
                 </ul>
             </nav>
 
         </div>
-        <section id="conferenciaID" class="row justify-content-end p-5 promo ">
-            <div class="col-lg-6 col-sm-12">
-                <h1>Conf Bs As</h1>
-                <p class="text-white">
+        <section id="conferenciaID" class="row justify-content-end p-5 align-items-center promo py-5">
+            <div class="col-lg-6 col-sm-12 " >
+                <h1 class="text-white">Conf Bs As</h1>
+                <p class="text-white text-end">
                     Bs As llega por primera vez a Argentina, Un evento para compartir con nuestra comunidad el
                     conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a
                     miembros del evento, a otros estudiantes de Codo a Codo y los oradoresID de primer nivel que tenemos
@@ -53,55 +58,74 @@
 
     <main class="main">
 
-        <section id="oradoresID" class="container-fluid oradores">
+        <section id="oradoresID" class="d-grid oradores gap-2 py-5 bg-image">
             <h2 class="superHeader">conoce a los <br><span>ORADORES</span></h2>
-            <div class="tarjetas d-flex justify-content-center">
-                <div class="col-lg-3 col-sm-12">
-                    <img class="img-fluid" src="./assets/images/steve.jpg" alt="Retrato de Steve Jobs" class="fotoOradores">
-                    <h5 class="logoJS">JavaScript</h5>
-                    <h5 class="logoReact">React</h5>
-                    <h3>Steve Jobs</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, nam eos autem dolore, fuga,
-                        voluptates aspernatur animi placeat aliquam laborum totam quo corrupti cum alias facilis quas
-                        dignissimos
-                        odit
-                        rerum?
-                    </p>
+            <div class="tarjetas d-flex justify-content-center gap-2 ">
+                <div class="col-lg-3 col-12 border rounded-1 border-1">
+                    <img class="img-fluid mb-3 rounded-top" src="./assets/images/steve.jpg" alt="Retrato de Steve Jobs"
+                        class="fotoOradores">
+                    <div class="d-flex flex-column p-3">
+                        <div class="d-flex gap-1">
+                            <h5 class="bg-warning rounded text-center p-1 ">JavaScript</h5>
+                            <h5 class="bg-info rounded text-center p-1 text-white">React</h5>
+                        </div>
+                        <h3>Steve Jobs</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, nam eos autem dolore, fuga,
+                            voluptates aspernatur animi placeat aliquam laborum totam quo corrupti cum alias facilis
+                            quas
+                            dignissimos
+                            odit
+                            rerum?
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
-                    <img class="img-fluid"src="./assets/images/bill.jpg" alt="Retrato de Bill Gates" class="fotoOradores">
-                    <h5 class="logoJS">JavaScript</h5>
-                    <h5 class="logoReact">React</h5>
-                    <h3>Bill Gates</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, nam eos autem dolore, fuga,
-                        voluptates
-                        aspernatur animi placeat aliquam laborum totam quo corrupti cum alias facilis quas dignissimos
-                        odit
-                        rerum?
-                    </p>
+                <div class="col-lg-3  col-12 border rounded-1 border-1">
+                    <img class="img-fluid mb-3 rounded-top" src="./assets/images/bill.jpg" alt="Retrato de Bill Gates"
+                        class="fotoOradores">
+                    <div class="d-flex flex-column p-3">
+                        <div class="d-flex gap-1">
+                            <h5 class="bg-warning rounded text-center p-1 ">JavaScript</h5>
+                            <h5 class="bg-info rounded text-center p-1 text-white ">React</h5>
+                        </div>
+                        <h3>Bill Gates</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, nam eos autem dolore, fuga,
+                            voluptates
+                            aspernatur animi placeat aliquam laborum totam quo corrupti cum alias facilis quas
+                            dignissimos
+                            odit
+                            rerum?
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-12">
-                    <img class="img-fluid" src="./assets/images/ada.jpeg" alt="Retrato de Ada Lovelace" class="fotoOradores">
-                    <h5 class="logoJS">Negocios</h5>
-                    <h5 class="logoReact">Startups</h5>
-                    <h3>Ada Lovelace</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, nam eos autem dolore, fuga,
-                        voluptates
-                        aspernatur animi placeat aliquam laborum totam quo corrupti cum alias facilis quas dignissimos
-                        odit
-                        rerum?
-                    </p>
+                <div class="col-lg-3 col-12  border rounded-1 border-2">
+                    <img class="img-fluid mb-3 rounded-top" src="./assets/images/ada.jpeg" alt="Retrato de Ada Lovelace"
+                        class="fotoOradores">
+                    <div class="d-flex flex-column p-3">
+                        <div class="d-flex gap-1">
+                            <h5 class="bg-secondary rounded text-center p-1 text-white">Negocios</h5>
+                            <h5 class="bg-danger rounded text-center p-1 text-white">Startups</h5>
+                        </div>
+                        <h3>Ada Lovelace</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, nam eos autem dolore, fuga,
+                            voluptates
+                            aspernatur animi placeat aliquam laborum totam quo corrupti cum alias facilis quas
+                            dignissimos
+                            odit
+                            rerum?
+                        </p>
+                    </div>
                 </div>
             </div>
 
         </section>
 
-        <section id="lugarID" class="container-fluid lugar">
-            <img class="img-fluid col-md-6 d-none d-md-block" src="./assets/images/honolulu.jpg" alt="Foto de costa de Honolulu">
-            <div class="col-md-6">
+        <section id="lugarID" class="d-flex lugar text-white py-5">
+            <img class=" col-md-6 d-none d-md-block m-1" src="./assets/images/honolulu.jpg"
+                alt="Foto de costa de Honolulu">
+            <div class="col-md-6 m-1 p-5">
                 <h2>Bs As - Octubre</h2>
                 <p>
                     Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
@@ -114,34 +138,34 @@
             </div>
         </section>
 
-        <section id="convertiteID" class="converte d-flex flex-column">
-            <h2 class="superHeader">convertite en un <br> <span>ORADOR</span></h2>
+        <section id="convertiteID" class="convertite d-flex flex-column col-md-6 mx-auto py-5">
+            <h2 class="superHeader text-center">convertite en un <br> <span>ORADOR</span></h2>
             <p>Anótate como orador para dar una <u>charla ignite</u>. Cuéntanos de qupe quieres hablar! </p>
-            <form class="formularioOrador ">
-                <div>
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="text" placeholder="Apellido" required>
+            <form class="formularioOrador d-grid gap-2">
+                <div class="row gap-2">
+                    <input class="col" type="text" placeholder="Nombre" required>
+                    <input class="col" type="text" placeholder="Apellido" required>
                 </div>
 
-                <div>
+                <div class="row">
                     <textarea name="" id="" cols="44" rows="6" placeholder="Sobre que quieres hablar?"
                         required></textarea>
                 </div>
-                <p>Recuerda incluir un titulo para tu charla.</p>
-                <div>
+                <p class="row">Recuerda incluir un titulo para tu charla.</p>
+                <div class="row">
                     <input type="submit" value="Enviar">
                 </div>
             </form>
         </section>
     </main>
-    <footer class="footer">
-        <ul>
-            <li>Contáctenos</li>
-            <li>Prensa</li>
-            <li>Conferencias</li>
-            <li>Términos y condiciones</li>
-            <li>Privacidad</li>
-            <li>Estudiantes</li>
+    <footer class="footer container-fluidbg-dark  ">
+        <ul class="list-unstyled text-white-50  d-flex justify-content-around bg-dark py-3">
+            <li class="col-md-2 text-center">Contáctenos</li>
+            <li class="col-md-2 text-center">Prensa</li>
+            <li class="col-md-2 text-center">Conferencias</li>
+            <li class="col-md-2 text-center">Términos y condiciones</li>
+            <li class="col-md-2 text-center">Privacidad</li>
+            <li class="col-md-2 text-center">Estudiantes</li>
         </ul>
 
     </footer>
