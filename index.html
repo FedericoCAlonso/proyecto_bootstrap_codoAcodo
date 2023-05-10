@@ -6,56 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>TP Integrador HTML </title>
 </head>
 
 <body id="index">
-    <header class="header">
-        <div class="barraNavegacion">
-            <div class="grupoLogo">
-                <a href="#index"><img src="./assets/images/codoacodo.png" alt="Logo codo a codo"></a>
+    <header class="header container-fluid bg-dark ">
+        <div class="barraNavegacion navbar-expand-lg d-flex justify-content-around">
+            <div class="grupoLogo d-flex align-items-center navbar-light col-lg-5 text-white">
+                <a href="#" class="navbar-brand"><img src="./assets/images/codoacodo.png" alt="Logo codo a codo"></a>
                 <h2>Conf Bs. As.</h2>
             </div>
-
-            <nav class="navegacion" id="menuNav">
-                <div class="botonNav">
-                    <a href="#menuNav">
-                        <img src="./assets/butons/button_nav.png" alt="">
-                    </a>
-                </div>
-                <ul>
-                    <li><a class="linkNav" href="#conferenciaID">La Conferencia</a></li>
-                    <li><a class="linkNav" href="#oradoresID">Los oradoresID</a></li>
-                    <li><a class="linkNav" href="#lugarID">El lugarID y la fecha</a></li>
-                    <li><a class="linkNav" href="#convertiteID">Convertite en orador</a></li>
-                    <li><a class="linkNav comprar" href="./pages/tienda.html">Comprar tickets</a></li>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navegacion collapse navbar-collapse navbar-light col-lg-5" id="menuNav" >
+                <ul class="navbar-nav w-100 justify-content-around d-flex align-items-center" >
+                    <li><a class="linkNav nav-item text-white-50" href="#conferenciaID">La Conferencia</a></li>
+                    <li><a class="linkNav nav-item text-white-50" href="#oradoresID">Los oradoresID</a></li>
+                    <li><a class="linkNav nav-item text-white-50" href="#lugarID">El lugarID y la fecha</a></li>
+                    <li><a class="linkNav nav-item text-white-50" href="#convertiteID">Convertite en orador</a></li>
+                    <li><a class="linkNav nav-item comprar text-success" href="./pages/tienda.html">Comprar tickets</a></li>
                 </ul>
             </nav>
 
         </div>
-        <section id="conferenciaID" class="contenedorA promo">
-            <h1>Conf Bs As</h1>
-            <p>
-                Bs As llega por primera vez a Argentina, Un evento para compartir con nuestra comunidad el
-                conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a
-                miembros del evento, a otros estudiantes de Codo a Codo y los oradoresID de primer nivel que tenemos
-                para ti ¡Te esperamos!
-            </p>
-            <div>
-                <a href="./pages/tienda.html"> <button class="boton resaltado">Comprar tickets</button> </a>
-                <a href="#convertiteID"> <button class="boton">Quiero ser orador</button> </a>
+        <section id="conferenciaID" class="row justify-content-end p-5 promo ">
+            <div class="col-lg-6 col-sm-12">
+                <h1>Conf Bs As</h1>
+                <p class="text-white">
+                    Bs As llega por primera vez a Argentina, Un evento para compartir con nuestra comunidad el
+                    conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a
+                    miembros del evento, a otros estudiantes de Codo a Codo y los oradoresID de primer nivel que tenemos
+                    para ti ¡Te esperamos!
+                </p>
+                <div>
+                    <a href="./pages/tienda.html"> <button class="boton resaltado">Comprar tickets</button> </a>
+                    <a href="#convertiteID"> <button class="boton">Quiero ser orador</button> </a>
+                </div>
             </div>
+
         </section>
     </header>
 
     <main class="main">
 
-        <section id="oradoresID" class="contenedorB oradores">
+        <section id="oradoresID" class="container-fluid oradores">
             <h2 class="superHeader">conoce a los <br><span>ORADORES</span></h2>
-            <div class="tarjetas">
-                <div>
-                    <img src="./assets/images/steve.jpg" alt="Retrato de Steve Jobs" class="fotoOradores">
+            <div class="tarjetas d-flex justify-content-center">
+                <div class="col-lg-3 col-sm-12">
+                    <img class="img-fluid" src="./assets/images/steve.jpg" alt="Retrato de Steve Jobs" class="fotoOradores">
                     <h5 class="logoJS">JavaScript</h5>
                     <h5 class="logoReact">React</h5>
                     <h3>Steve Jobs</h3>
@@ -67,8 +69,8 @@
                         rerum?
                     </p>
                 </div>
-                <div>
-                    <img src="./assets/images/bill.jpg" alt="Retrato de Bill Gates" class="fotoOradores">
+                <div class="col-lg-3 col-sm-12">
+                    <img class="img-fluid"src="./assets/images/bill.jpg" alt="Retrato de Bill Gates" class="fotoOradores">
                     <h5 class="logoJS">JavaScript</h5>
                     <h5 class="logoReact">React</h5>
                     <h3>Bill Gates</h3>
@@ -80,8 +82,8 @@
                         rerum?
                     </p>
                 </div>
-                <div>
-                    <img src="./assets/images/ada.jpeg" alt="Retrato de Ada Lovelace" class="fotoOradores">
+                <div class="col-lg-3 col-sm-12">
+                    <img class="img-fluid" src="./assets/images/ada.jpeg" alt="Retrato de Ada Lovelace" class="fotoOradores">
                     <h5 class="logoJS">Negocios</h5>
                     <h5 class="logoReact">Startups</h5>
                     <h3>Ada Lovelace</h3>
@@ -97,9 +99,9 @@
 
         </section>
 
-        <section id="lugarID" class="contenedorA lugar">
-            <img src="./assets/images/honolulu.jpg" alt="Foto de costa de Honolulu">
-            <div>
+        <section id="lugarID" class="container-fluid lugar">
+            <img class="img-fluid col-md-6 d-none d-md-block" src="./assets/images/honolulu.jpg" alt="Foto de costa de Honolulu">
+            <div class="col-md-6">
                 <h2>Bs As - Octubre</h2>
                 <p>
                     Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
@@ -112,10 +114,10 @@
             </div>
         </section>
 
-        <section id="convertiteID" class="convertite">
+        <section id="convertiteID" class="converte d-flex flex-column">
             <h2 class="superHeader">convertite en un <br> <span>ORADOR</span></h2>
             <p>Anótate como orador para dar una <u>charla ignite</u>. Cuéntanos de qupe quieres hablar! </p>
-            <form class="formularioOrador">
+            <form class="formularioOrador ">
                 <div>
                     <input type="text" placeholder="Nombre" required>
                     <input type="text" placeholder="Apellido" required>

@@ -10,27 +10,6 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.barraNavegacion {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    display: flex;
-    padding: 0px 8vw 0px 8vw;
-    background-color: #333a40;
-    /* height: 15vh; */
-    height: 75px;
-    /*<-- tener presente para el margen, recordar que es fixed #barraNav*/
-    justify-content: space-between;
-    align-items: center;
-}
-
-.grupoLogo {
-    /* background-color: blue; */
-    display: flex;
-    align-items: center;
-    color: white;
-}
 
 .grupoLogo img {
     height: 75px;
@@ -41,44 +20,15 @@ body {
     font-weight: 400;
 }
 
-.botonNav {
-    display: none;
-    width: 40px;
-    height: 40px;
-    /* border-radius: 5px;
-    background: red; */
-}
 
-nav.navegacion ul {
 
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
 
 .linkNav {
     text-decoration: none;
-    padding-left: 1rem;
     font-size: 1rem;
     font-weight: 500;
-    color: darkgray;
-}
+} 
 
-.comprar {
-    color: #27a844;
-}
-
-/*Contenedor para promo y para lugar*/
-.contenedorA {
-    height: max(calc(100vh - 75px), 200px);
-    /*Calculado para respetar el margen por la barra fixed*/
-    width: 100vw;
-    padding-top: 75px;
-    /*<-- padding #barraNav*/
-    display: flex;
-    color: white;
-}
 
 /*Configuración especial promo*/
 .promo {
@@ -86,20 +36,10 @@ nav.navegacion ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    /* text-align: right; */
 
-    padding-right: 10vw;
 }
 
-.promo p {
-    text-align: right;
-    line-height: 2;
-    width: 40%;
-    margin: 1rem 0px 1rem 0px;
-}
+
 
 .promo h1 {
     font-size: 2.5rem;
@@ -135,12 +75,7 @@ nav.navegacion ul {
     border: 2px solid #27a844;
 }
 
-.contenedorB {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 75px 15vw 1vh 15vw;
-}
+
 
 .oradores h2 {
     text-align: center;
@@ -161,12 +96,7 @@ nav.navegacion ul {
     color: black;
 }
 
-.tarjetas {
-    display: flex;
-    /*justify-content:center;*/
-    align-items: start;
 
-}
 
 .tarjetas div {
     width: 25vw;
@@ -178,65 +108,40 @@ nav.navegacion ul {
 .tarjetas img {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
-    width: 100%;
+
 }
 
-.lugar {
-
-    flex-direction: row;
-    height: max-content;
-}
 
 .lugar img {
     display: block;
-    width: 50%;
-    margin: 1px;
+
 }
 
 .lugar div {
     line-height: 2;
     background-color: #333a40;
-    width: 50%;
-    margin: 1px;
-    padding: 20px;
+
+
 }
 
-.convertite {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 2rem;
-}
+
 
 .convertite p {
     text-align: center;
     font-size: 0.8rem;
 }
 
-.formularioOrador {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
 
-.formularioOrador div {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 1rem;
-}
+
 
 .formularioOrador div input {
-    width: 48%;
+
     height: 1.5rem;
     border: 1px solid #c9c8c8;
     border-radius: 5px;
 }
 
 .formularioOrador div textarea {
-    width: 100%;
     border: 1px solid #c9c8c8;
     border-radius: 5px;
 }
@@ -248,7 +153,7 @@ nav.navegacion ul {
 }
 
 .formularioOrador div:last-child input {
-    width: 100%;
+
     background-color: #96c93e;
     border: 1px solid #96c93e;
     color: white;
@@ -278,189 +183,3 @@ nav.navegacion ul {
     color: white;
 }
 
-/*breakpoint para celular de 0 a 768px*/
-@media screen and (max-width: 767px) {
-    .barraNavegacion {
-        width: 100vw;
-        height: 10vh;
-        bottom: 0vh;
-        top: unset;
-        flex-direction: row;
-        /*height: initial;*/
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .grupoLogo img {
-        height: 60px;
-    }
-
-    .grupoLogo h2 {
-        font-size: 1.5rem;
-    }
-
-    nav.navegacion ul {
-        display: none;
-    }
-
-    .botonNav {
-        display: block;
-    }
-
-    nav:target ul {
-        position: fixed;
-        bottom: 0vh;
-        right: 0vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-        background: rgba(0, 0, 0, .8);
-        color: white;
-        font-size: 2rem;
-        border-radius: 5px;
-        padding: 1vh;
-
-    }
-
-    nav:target div {
-        display: none;
-    }
-
-    .promo {
-        height: 90vh;
-        margin-top: 0;
-        margin-bottom: 10vh;
-        padding: 10%;
-        align-items: flex-start;
-
-    }
-
-
-    .promo h1 {
-        font-size: 1.5rem;
-    }
-
-    .promo p {
-        width: 90%;
-        font-size: 1rem;
-        text-align: justify;
-    }
-
-
-    .promo button {
-        width: 90px;
-        height: 40px;
-        margin: 5px;
-        border: 2px solid white;
-        border-radius: 4px;
-        background-color: transparent;
-        color: white;
-        font-size: .8rem;
-    }
-
-    .contenedorB {
-        width: 100vw;
-        /* height: 90vh; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0%;
-        margin-bottom: 10vh;
-
-    }
-
-    .oradores h2 {
-        text-align: center;
-        text-transform: uppercase;
-        /*background-color: green;*/
-    }
-
-    .superHeader {
-        font-size: 2rem
-    }
-
-    .tarjetas {
-        display: block;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .tarjetas div {
-        width: 100%;
-        margin: 0%;
-        padding: 5px;
-        border: 1px solid #d4d4d4;
-        border-radius: 4px;
-    }
-
-    .tarjetas img {
-        border-radius: 5px;
-        width: 100%;
-    }
-
-    .lugar img {
-        display: none;
-    }
-
-    .lugar {
-        background: linear-gradient(to right, #0000009c, #0000009c), url("../assets/images/honolulu.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .lugar div {
-        background: none;
-        width: 90%;
-    }
-}
-
-/*tablet*/
-@media screen and (min-width:768px) and (max-width:1023px) {
-
-    /*se cargaron los estilos dentro de las llaves*/
-    .barraNavegacion {
-        flex-direction: column;
-        height: initial;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenedorB {
-        padding: 1vh;
-    }
-
-    .tarjetas div {
-        width: 30vw;
-    }
-
-    .lugar img {
-        display: none;
-    }
-
-    .lugar {
-        background: linear-gradient(to right, #0000009c, #0000009c), url("../assets/images/honolulu.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .lugar div {
-        background: none;
-        width: 90%;
-    }
-
-}
-
-/*notebook*/
-@media screen and (min-width:1024px) and (max-width: 1400px) {}
-
-@media screen and (min-width:1401px) {}
