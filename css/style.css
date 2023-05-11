@@ -10,10 +10,10 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-
+/* 
 .grupoLogo img {
     height: 75px;
-}
+} */
 
 .grupoLogo h2 {
     font-size: 1.5rem;
@@ -52,29 +52,6 @@ body {
 .infoPromo p {
     font-size: 1rem;
     line-height: 2;
-}
-
-
-.boton {
-    width: 180px;
-    height: 45px;
-    margin: 10px;
-    border: 2px solid white;
-    border-radius: 6px;
-    background-color: transparent;
-    color: white;
-    font-size: 1rem;
-}
-
-:hover.boton {
-    background-color: antiquewhite;
-    color: black;
-    border: 2px solid antiquewhite;
-}
-
-.resaltado {
-    background-color: #27a844;
-    border: 2px solid #27a844;
 }
 
 
