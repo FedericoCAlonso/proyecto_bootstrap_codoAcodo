@@ -10,26 +10,6 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-/* 
-.grupoLogo img {
-    height: 75px;
-} */
-
-.grupoLogo h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-
-
-
-/* .linkNav {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-}  */
-
-
 /*Configuración especial promo*/
 .promo {
     background: linear-gradient(to right, #0000009c, #0000009c), url("../assets/images/ba1.jpg");
@@ -37,29 +17,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-
-
 }
 
 
-
-.promo h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-
-}
-
-.infoPromo p {
-    font-size: 1rem;
-    line-height: 2;
-}
-
-
-.oradores h2 {
-    text-align: center;
-    text-transform: uppercase;
-    /*background-color: green;*/
-}
 .oradores h5{
     font-size:.7rem;
     font-weight: bold;
@@ -79,21 +39,6 @@ body {
 }
 
 
-/* 
-.tarjetas div {
-    width: 25vw;
-    margin: 10px;
-    border: 1px solid #d4d4d4;
-    border-radius: 4px; 
-}
-
-.tarjetas img {
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px; 
-
-} */
-
-
 .lugar img {
     display: block;
 
@@ -105,14 +50,6 @@ body {
 
 
 }
-
-
-
-/* .convertite p {
-    text-align: center;
-    font-size: 0.8rem;
-} */
-
 
 
 
